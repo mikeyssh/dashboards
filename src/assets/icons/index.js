@@ -9,7 +9,7 @@ import IconContacts from './icon-contacts';
 import IconIdeas from './icon-ideas';
 import IconLogo from './icon-logo';
 import IconLogout from './icon-logout';
-import IconDashboards from './icon-dashboards';
+import IconOverview from './icon-overview';
 import IconSearch from './icon-search';
 import IconSettings from './icon-settings';
 import IconSubscription from './icon-subscription';
@@ -27,7 +27,7 @@ export {
     IconIdeas,
     IconLogo,
     IconLogout,
-    IconDashboards,
+    IconOverview,
     IconSearch,
     IconSettings,
     IconSubscription,

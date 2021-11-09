@@ -1,10 +1,9 @@
 export default {
     // private
     dashboard: '/dashboard',
-    dashboardsAdmin: '/dashboards/admin',
-    dashboardsAnalyst: '/dashboards/analyst',
-    dashboardsCrypto: '/dashboards/crypto',
-    dashboardsSaas: '/dashboards/saas',
+    overview: '/overview',
+    overviewTwo: '/overview/two',
+    overviewThree: '/overview/three',
     tickets: '/tickets',
     ideas: '/ideas',
     ideasTwo: '/ideas/two',

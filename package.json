@@ -2,22 +2,18 @@
     "name": "react-admin-dashboard",
     "version": "0.1.0",
     "private": true,
-    "homepage": ".",
+    "homepage": "https://llorentegerman.github.io/react-admin-dashboard",
     "dependencies": {
-        "@badrap/bar-of-progress": "^0.1.2",
-        "@heroicons/react": "^1.0.5",
-        "@tailwindcss/forms": "^0.3.4",
-        "prop-types": "^15.7.2",
-        "react": "17.0.2",
-        "react-burger-menu": "^2.6.13",
-        "react-collapsible-content": "^1.0.0",
-        "react-dom": "17.0.2",
         "react-jss": "^10.4.0",
-        "react-router-dom": "^5.2.0",
+        "prop-types": "^15.7.2",
+        "react": "^16.13.1",
+        "react-burger-menu": "^2.6.13",
+        "react-dom": "^16.8.6",
         "react-scripts": "3.4.3",
         "react-svg-line-chart": "^2.0.1",
         "simple-flexbox": "^2.3.1",
-        "tailwind-scrollbar-hide": "^1.1.5"
+        "react-collapsible-content": "^1.0.0",
+        "react-router-dom": "^5.2.0"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -43,10 +39,6 @@
         ]
     },
     "devDependencies": {
-        "@headlessui/react": "^1.4.2",
-        "autoprefixer": "^10.4.0",
-        "gh-pages": "^2.0.1",
-        "postcss-cli": "^9.0.2",
-        "tailwindcss": "^2.2.19"
+        "gh-pages": "^2.0.1"
     }
 }
