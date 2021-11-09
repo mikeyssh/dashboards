@@ -8,7 +8,7 @@ import {
     IconContacts,
     IconIdeas,
     IconLogout,
-    IconOverview,
+    IconDashboards,
     IconSettings,
     IconSubscription,
     IconTickets
@@ -47,37 +47,66 @@ function SidebarComponent() {
                 <LogoComponent />
             </div>
             <MenuItem
-                id={SLUGS.dashboard}
-                title='Dashboard'
-                icon={IconSubscription}
-                onClick={() => onClick(SLUGS.dashboard)}
-            />
-            <MenuItem
-                id={SLUGS.overview}
-                items={[SLUGS.overviewTwo, SLUGS.overviewThree]}
-                title='Overview'
-                icon={IconOverview}
+                id={SLUGS.dashboards}
+                items={[SLUGS.dashboardsAdmin, SLUGS.dashboardsCrypto, SLUGS.dashboardsAnalyst, SLUGS.dashboardsSaas]}
+                title='Dashboards'
+                icon={IconDashboards}
             >
                 <MenuItem
-                    id={SLUGS.overview}
+                    id={SLUGS.dashboardsAdmin}
+                    title='Admin'
+                    level={2}
+                    icon={IconContacts}
+                    onClick={() => onClick(SLUGS.dashboardsAdmin)}
+                />
+                <MenuItem
+                    id={SLUGS.dashboardsAnalyst}
+                    title='Analyst'
+                    level={2}
+                    icon={IconContacts}
+                    onClick={() => onClick(SLUGS.dashboardsAnalyst)}
+                />
+                <MenuItem
+                    id={SLUGS.dashboardsCrypto}
+                    title='Crypto'
+                    level={2}
+                    icon={IconArticles}
+                    onClick={() => onClick(SLUGS.dashboardsCrypto)}
+                />
+                 <MenuItem
+                    id={SLUGS.dashboardsSaas}
+                    title='Saas'
+                    level={2}
+                    icon={IconArticles}
+                    onClick={() => onClick(SLUGS.dashboardsSaas)}
+                />
+            </MenuItem>
+            <MenuItem
+                id={SLUGS.dashboards}
+                items={[SLUGS.dashboardsAnalyst, SLUGS.dashboardsSaas]}
+                title='Dashboards'
+                icon={IconDashboards}
+            >
+                <MenuItem
+                    id={SLUGS.dashboardsAdmin}
                     title='Sub Item 1'
                     level={2}
                     icon={IconAgents}
-                    onClick={() => onClick(SLUGS.overview)}
+                    onClick={() => onClick(SLUGS.dashboardsAdmin)}
                 />
                 <MenuItem
-                    id={SLUGS.overviewTwo}
+                    id={SLUGS.dashboardsAnalyst}
                     title='Sub Item 2'
                     level={2}
                     icon={IconContacts}
-                    onClick={() => onClick(SLUGS.overviewTwo)}
+                    onClick={() => onClick(SLUGS.dashboardsAnalyst)}
                 />
                 <MenuItem
-                    id={SLUGS.overviewThree}
+                    id={SLUGS.dashboardsSaas}
                     title='Sub Item 3'
                     level={2}
                     icon={IconArticles}
-                    onClick={() => onClick(SLUGS.overviewThree)}
+                    onClick={() => onClick(SLUGS.dashboardsSaas)}
                 />
             </MenuItem>
             <MenuItem
