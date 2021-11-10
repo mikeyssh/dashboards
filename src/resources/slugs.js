@@ -29,7 +29,9 @@ export default {
     domainsResources: '/resources/domains/#overview',
     // domainsRegistrarResources: '/resources/registrar',
 
-    tickets: '/tickets',
+    // manage
+    manage: '/manage',
+
     ideas: '/ideas',
     ideasTwo: '/ideas/two',
     ideasThree: '/ideas/three',

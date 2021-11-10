@@ -6,12 +6,12 @@ import {
     IconAgents,
     IconArticles,
     IconContacts,
-    IconIdeas,
+    // IconIdeas,
     IconLogout,
     IconOverview,
     IconSettings,
     IconSubscription,
-    IconTickets
+    // IconTickets
 } from 'assets/icons';
 import { convertSlugToUrl } from 'resources/utilities';
 import LogoComponent from './LogoComponent';
@@ -197,7 +197,7 @@ function SidebarComponent() {
                     onClick={() => onClick(SLUGS.domainsResources)}
                 />
             </MenuItem>
-            <MenuItem
+            {/* <MenuItem
                 id={SLUGS.tickets}
                 title='Tickets'
                 icon={IconTickets}
@@ -248,19 +248,25 @@ function SidebarComponent() {
                 title='Articles'
                 icon={IconArticles}
                 onClick={() => onClick(SLUGS.articles)}
-            />
-            <MenuItem
+            /> */}
+            {/* <MenuItem
                 id={SLUGS.subscription}
                 title='Subscription'
                 icon={IconSubscription}
                 onClick={() => onClick(SLUGS.subscription)}
-            />
+            /> */}
             <div className={classes.separator}></div>
             <MenuItem
                 id={SLUGS.settings}
                 title='Settings'
                 icon={IconSettings}
                 onClick={() => onClick(SLUGS.settings)}
+            />
+            <MenuItem
+                id={SLUGS.manage}
+                title='Manage'
+                icon={IconSettings}
+                onClick={() => onClick(SLUGS.manage)}
             />
 
             <MenuItem id='logout' title='Logout' icon={IconLogout} onClick={logout} />
