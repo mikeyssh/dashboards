@@ -81,11 +81,13 @@ function SidebarComponent() {
                     onClick={() => onClick(SLUGS.dashboardsSaas)}
                 />
             </MenuItem>
+            {/* Applications */}
             <MenuItem
                 id={SLUGS.applications}
                 items={[SLUGS.applicationsEmail, SLUGS.applicationsFileManager, SLUGS.applicationsProductivity, SLUGS.applicationsNotes]}
                 title='Applications'
                 icon={IconOverview}
+                onClick={() => onClick(SLUGS.applicationsEmail)}
             >
                 <MenuItem
                     id={SLUGS.applicationsEmail}
@@ -114,6 +116,85 @@ function SidebarComponent() {
                     level={2}
                     icon={IconArticles}
                     onClick={() => onClick(SLUGS.applicationsNotes)}
+                />
+            </MenuItem>
+            {/* Network */}
+            <MenuItem
+                id={SLUGS.network}
+                items={[SLUGS.networkDomainManager, SLUGS.networkDnsManager, SLUGS.networkTransferIn, SLUGS.networkTransferIn, SLUGS.networkEducation]}
+                title='DNS'
+                icon={IconOverview}
+            >
+                <MenuItem
+                    id={SLUGS.networkDnsRecords}
+                    title='DNS Records'
+                    level={2}
+                    icon={IconContacts}
+                    onClick={() => onClick(SLUGS.networkDnsRecords)}
+                />
+                <MenuItem
+                    id={SLUGS.networkDnsQueryTools}
+                    title='DNS Query Tools'
+                    level={2}
+                    icon={IconArticles}
+                    onClick={() => onClick(SLUGS.networkDnsQueryTools)}
+                />
+                <MenuItem
+                    id={SLUGS.networkDnsPropogation}
+                    title='Propagation'
+                    level={2}
+                    icon={IconArticles}
+                    onClick={() => onClick(SLUGS.networkDnsPropogation)}
+                />
+                <MenuItem
+                    id={SLUGS.networkResources}
+                    title='Resources'
+                    level={2}
+                    icon={IconArticles}
+                    onClick={() => onClick(SLUGS.networkResources)}
+                />
+            </MenuItem>
+            {/* Domains */}
+            <MenuItem
+                id={SLUGS.domains}
+                items={[SLUGS.domainsManager, SLUGS.networkDnsManager, SLUGS.networkTransferIn, SLUGS.networkTransferIn, SLUGS.networkEducation]}
+                title='Domains'
+                icon={IconOverview}
+            >
+                <MenuItem
+                    id={SLUGS.domainsManager}
+                    title='Domain List'
+                    level={2}
+                    icon={IconAgents}
+                    onClick={() => onClick(SLUGS.domainsManager)}
+                />
+                <MenuItem
+                    id={SLUGS.domainsNameServers}
+                    title='Name Servers'
+                    level={2}
+                    icon={IconContacts}
+                    onClick={() => onClick(SLUGS.domainsNameServers)}
+                />
+                <MenuItem
+                    id={SLUGS.domainsTransferIn}
+                    title='Transfer In'
+                    level={2}
+                    icon={IconArticles}
+                    onClick={() => onClick(SLUGS.domainsTransferIn)}
+                />
+                <MenuItem
+                    id={SLUGS.domainsTransferOut}
+                    title='Transfer Out'
+                    level={2}
+                    icon={IconArticles}
+                    onClick={() => onClick(SLUGS.domainsTransferOut)}
+                />
+                <MenuItem
+                    id={SLUGS.domainsResources}
+                    title='Resources'
+                    level={2}
+                    icon={IconArticles}
+                    onClick={() => onClick(SLUGS.domainsResources)}
                 />
             </MenuItem>
             <MenuItem

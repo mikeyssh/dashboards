@@ -1,10 +1,34 @@
 export default {
     // private
-    dashboard: '/dashboard',
+
+    // home
+    home: '/',
+    dashboards: '/dashboards',
     dashboardsAdmin: '/dashboards/admin',
     dashboardsAnalyst: '/dashboards/analyst',
     dashboardsCrypto: '/dashboards/crypto',
     dashboardsSaas: '/dashboards/saas',
+    // applications
+    applications: '/apps',
+    applicationsEmail: '/email',
+    applicationsFileManager: '/file-manager',
+    applicationsProductivity: '/productivity',
+    applicationsNotes: '/notes',
+    // network
+    network: '/network',
+    networkDnsRecords: '/dns/zone-records',
+    networkDnsQueryTools: '/dns/query-tools',
+    networkDnsPropogation: '/dns/propagation',
+    networkResources: '/resources/dns/#overview',
+    // domains
+    domains: '/domains',
+    domainsManager: '/domain-manager',
+    domainsNameServers: '/name-servers',
+    domainsTransferIn: '/transfer/#in',
+    domainsTransferOut: '/transfer/#out',
+    domainsResources: '/resources/domains/#overview',
+    // domainsRegistrarResources: '/resources/registrar',
+
     tickets: '/tickets',
     ideas: '/ideas',
     ideasTwo: '/ideas/two',
