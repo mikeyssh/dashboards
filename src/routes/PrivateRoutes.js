@@ -3,13 +3,16 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import SLUGS from 'resources/slugs';
 import LoadingComponent from 'components/loading';
 
-const DashboardComponent = lazy(() => import('./dashboard'));
+const DashboardsComponent = lazy(() => import('./dashboards'));
 
 function PrivateRoutes() {
     return (
         <Suspense fallback={<LoadingComponent loading />}>
             <Switch>
-                <Route exact path={SLUGS.dashboard} component={DashboardComponent} />
+                <Route exact path={SLUGS.dashboards} component={DashboardsComponent} />
+                <Route exact path={SLUGS.dashboardsAdmin} render={() => <div>dashboardsAdmin</div>} />
+                <Route exact path={SLUGS.dashboardsAnalyst} render={() => <div>dashboardsAnalyst</div>} />
+                <Route exact path={SLUGS.dashboardsCrypto} render={() => <div>dashboardsCrypto</div>} />
                 <Route exact path={SLUGS.overviewTwo} render={() => <div>overviewTwo</div>} />
                 <Route exact path={SLUGS.overviewThree} render={() => <div>overviewThree</div>} />
                 <Route exact path={SLUGS.overview} render={() => <div>overview</div>} />
